@@ -10,7 +10,9 @@ use App\User;
 
 class AdminPageController extends Controller
 {
-    $users 	= User::latest()->paginate(5);
+    
+
+    $users  = User::latest()->paginate(5);
 	$roles 	= Role::latest()->paginate(5);
     $questions      = Question::all();
     $departments    = Department::all();
